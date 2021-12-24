@@ -17,21 +17,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fge-CR-uch">
-                                <rect key="frame" x="132" y="278" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor"/>
-                            </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTQ-Ip-QLw">
-                                <rect key="frame" x="132" y="90" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemRedColor"/>
-                            </view>
-                            <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qo-TJ-AKd">
-                                <rect key="frame" x="132" y="471" width="150" height="150"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemGreenColor"/>
-                            </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-vb-nn3">
                                 <rect key="frame" x="84" y="728" width="246" height="60"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -45,9 +30,40 @@
                                     <action selector="startButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jHq-J4-dxR"/>
                                 </connections>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="29" translatesAutoresizingMaskIntoConstraints="NO" id="bRu-56-2Kq">
+                                <rect key="frame" x="132" y="79" width="150" height="508"/>
+                                <subviews>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bTQ-Ip-QLw">
+                                        <rect key="frame" x="0.0" y="0.0" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="bTQ-Ip-QLw" secondAttribute="height" multiplier="1:1" id="x5Q-ZI-V6q"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7qo-TJ-AKd">
+                                        <rect key="frame" x="0.0" y="179" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemGreenColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="7qo-TJ-AKd" secondAttribute="height" multiplier="1:1" id="Kux-1u-iiR"/>
+                                        </constraints>
+                                    </view>
+                                    <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fge-CR-uch">
+                                        <rect key="frame" x="0.0" y="358" width="150" height="150"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="fge-CR-uch" secondAttribute="height" multiplier="1:1" id="MQr-G5-mcc"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
+                        <constraints>
+                            <constraint firstItem="bRu-56-2Kq" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="height" multiplier="75:409" id="KLA-sd-udm"/>
+                            <constraint firstItem="bRu-56-2Kq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="RP6-E3-P8h"/>
+                            <constraint firstItem="bRu-56-2Kq" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ciN-D1-ntE"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenColorView" destination="7qo-TJ-AKd" id="Q8E-is-k9l"/>
