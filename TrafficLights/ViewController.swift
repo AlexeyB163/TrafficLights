@@ -31,6 +31,8 @@ class ViewController: UIViewController {
         
         if redColorView.alpha < 1 && yellowColorView.alpha < 1 && greenColorView.alpha < 1 {
             sender.setTitle("Next", for: .normal)
+            sender.titleLabel?.font = .systemFont(ofSize: 44)
+            
             redColorView.alpha = 1
 
             return
