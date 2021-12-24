@@ -18,29 +18,27 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fge-CR-uch">
-                                <rect key="frame" x="172" y="238" width="70" height="70"/>
+                                <rect key="frame" x="132" y="278" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemYellowColor"/>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bTQ-Ip-QLw">
-                                <rect key="frame" x="179" y="133" width="56" height="61"/>
+                                <rect key="frame" x="132" y="90" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemRedColor"/>
                             </view>
                             <view alpha="0.29999999999999999" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="7qo-TJ-AKd">
-                                <rect key="frame" x="166" y="368" width="83" height="72"/>
+                                <rect key="frame" x="132" y="471" width="150" height="150"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" systemColor="systemGreenColor"/>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-vb-nn3">
-                                <rect key="frame" x="159" y="502" width="96" height="60"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eMg-vb-nn3">
+                                <rect key="frame" x="84" y="728" width="246" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" name="AccentColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="60" id="JGN-d4-rGj"/>
-                                </constraints>
                                 <color key="tintColor" systemColor="labelColor"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="Start">
+                                <buttonConfiguration key="configuration" style="plain" title="Start" titleAlignment="center">
                                     <fontDescription key="titleFontDescription" type="system" pointSize="35"/>
                                 </buttonConfiguration>
                                 <connections>
@@ -50,14 +48,11 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemGray4Color"/>
-                        <constraints>
-                            <constraint firstItem="eMg-vb-nn3" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="76" id="52W-ul-Rff"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eMg-vb-nn3" secondAttribute="bottom" constant="67" id="gcT-Ds-Y16"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="greenColorView" destination="7qo-TJ-AKd" id="Q8E-is-k9l"/>
                         <outlet property="redColorView" destination="bTQ-Ip-QLw" id="cvn-3G-E1f"/>
+                        <outlet property="startButton" destination="eMg-vb-nn3" id="Hdh-tb-PWn"/>
                         <outlet property="yellowColorView" destination="fge-CR-uch" id="GYj-Ur-nBh"/>
                     </connections>
                 </viewController>
